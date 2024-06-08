@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from utils.export_food_truck_data import get_food_truck_recommendations
+from utils.get_food_truck_recommendations import get_food_truck_recommendations
 
 from .serializers import UserPreferenceSerializer
 

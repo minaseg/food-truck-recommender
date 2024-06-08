@@ -30,8 +30,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/food-truck-recommendation-system.git
-   cd food-truck-recommendation-system
+   git clone https://github.com/minodr/food-truck-recommender.git
+   cd food-truck-recommender/
    ```
 
 2. **Create a virtual environment**
@@ -44,16 +44,18 @@ Follow these instructions to get a copy of the project up and running on your lo
 3. **Instance the dependencies**
 
    ```sh
-   pip install -r requirements.txt
+    pip install -r requirements.txt
    ```
 
 4. **Run the development server**
 
    ```sh
-   python manage.py runserver
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
    ```
 
-   The application will be available at http://127.0.0.1:8000/.
+   The application will be available at http://127.0.0.1:8000/ or http://127.0.0.1:8000/recommend/.
 
 ## Usage
 
@@ -79,10 +81,10 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. Utilize the "dayshour" Column:
 
-- Interpret Empty Data: For food trucks where the "dayshour" column is empty, make assumptions based on common practices. For example, assume they operate on weekdays from around 11 am to 2 pm for lunch and 5 pm to 8 pm for dinner. On weekends, assume longer hours.
+   - Interpret Empty Data: For food trucks where the "dayshour" column is empty, make assumptions based on common practices. For example, assume they operate on weekdays from around 11 am to 2 pm for lunch and 5 pm to 8 pm for dinner. On weekends, assume longer hours.
 
-- Gather More Specific Data: Where possible, gather more specific data from these food trucks to improve accuracy.
+   - Gather More Specific Data: Where possible, gather more specific data from these food trucks to improve accuracy.
 
 2. Improve User Interface:
 
-- Interactive Map: Provide an interactive map showing the location of recommended food trucks.
+   - Interactive Map: Provide an interactive map showing the location of recommended food trucks.

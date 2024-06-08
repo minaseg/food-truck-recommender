@@ -57,27 +57,32 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## Usage
 
-1.  **Access the API endpoint**
+1. **Access the API endpoint**
 
-    ```sh
-    POST /recommend_food_trucks/
-    ```
+   ```sh
+   POST /recommend/
+   ```
 
-    ## Example JSON Body
+   ## Example JSON Body
 
-    Here is an example of a JSON body that you can use for your request:
+   Here is an example of a JSON body that you can use for your request:
 
-    ```json
-    {
-      "latitude": 10.023942,
-      "longitude": 209342,
-      "preference": "hot dog"
-    }
-    ```
+   ```json
+   {
+     "latitude": 10.023942,
+     "longitude": 209342,
+     "preference": "hot dog"
+   }
+   ```
 
 ## Improvements for the Food Truck Recommendation System
 
-- Utilize the "dayshour" Column:
+1. Utilize the "dayshour" Column:
 
-  - For food trucks where the "dayshour" column is empty, make assumptions based on common practices.
-  - Gather more specific data from these food trucks to improve accuracy.
+- Interpret Empty Data: For food trucks where the "dayshour" column is empty, make assumptions based on common practices. For example, assume they operate on weekdays from around 11 am to 2 pm for lunch and 5 pm to 8 pm for dinner. On weekends, assume longer hours.
+
+- Gather More Specific Data: Where possible, gather more specific data from these food trucks to improve accuracy.
+
+2. Improve User Interface:
+
+- Interactive Map: Provide an interactive map showing the location of recommended food trucks.

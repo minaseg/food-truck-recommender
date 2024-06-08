@@ -27,8 +27,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Installation
 
-0. **Video Manual: https://www.loom.com/share/969a8c48d1844a6bbe432cac4ed8336c?sid=914307a1-d8d5-4524-b349-324471de1c8b**
-
 1. **Clone the repository:**
 
    ```sh
@@ -90,3 +88,5 @@ Follow these instructions to get a copy of the project up and running on your lo
 2. Improve User Interface:
 
    - Interactive Map: Provide an interactive map showing the location of recommended food trucks.
+
+**Video Usage Manual: https://www.loom.com/share/969a8c48d1844a6bbe432cac4ed8336c?sid=914307a1-d8d5-4524-b349-324471de1c8b**
